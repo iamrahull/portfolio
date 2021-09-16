@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SiRedux,SiMaterialUi } from 'react-icons/si'
 import {
   faGithub,
   faHtml5,
@@ -7,8 +8,10 @@ import {
   faJs,
   faGitAlt,
   faNpm,
-  faNode,
+  faNode
 } from "@fortawesome/free-brands-svg-icons";
+import { DiExtjs } from "react-icons/di";
+import { AiFillApi } from "react-icons/ai";
 import {
   faMobileAlt,
 } from "@fortawesome/free-solid-svg-icons";
@@ -45,24 +48,28 @@ const Skills = () => {
     <Container id="skills" data-aos="zoom-out-up">
       <h2>skills</h2>
       <IconsContainer>
-        <EachSkill icon={faHtml5} skill="html5" direction="zoom-out-up" />
-        <EachSkill icon={faJs} skill="javascript" direction="zoom-out-up" />
-        <EachSkill icon={faReact} skill="react" direction="zoom-out-up" />
-        <EachSkill icon={faNode} skill="express" direction="zoom-out-up" />
-        <EachSkill icon={faCss3} skill="css3" direction="zoom-out-up" />
-        <EachSkill icon={faGitAlt} skill="git" direction="zoom-out-up" />
-        <EachSkill icon={faGithub} skill="github" direction="zoom-out-up" />
+      
+        <EachSkill icon={faJs} skill="JavaScript" direction="zoom-out-up" />
+        <EachSkill icon={faNode} skill="Express.js" direction="zoom-out-up" />
+        <EachSkill icon={faReact} skill="React.js" direction="zoom-out-up" />
+        <EachSkill icon={<SiRedux/>} isReactIcon = 'true' skill="Redux" direction="zoom-out-up" />
+        <EachSkill icon={<SiMaterialUi/>} isReactIcon = 'true' skill="Material UI" direction="zoom-out-up" />
+        <EachSkill
+          icon={<AiFillApi/>}
+          skill="API Design"
+          isReactIcon = 'true'
+          direction="zoom-out-up"
+        />
+        <EachSkill icon={faHtml5} skill="HTML" direction="zoom-out-up" />
+        <EachSkill icon={faCss3} skill="CSS" direction="zoom-out-up" />
         <EachSkill
           icon={faMobileAlt}
           skill="responsive design"
           direction="zoom-out-up"
         />
-        <EachSkill
-          icon={faNpm}
-          skill="npm"
-          direction="zoom-out-up"
-        />
+      
       </IconsContainer>
+      
     </Container>
   );
 };

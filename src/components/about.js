@@ -10,7 +10,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 2fr 1.7fr;
 
-  @media (max-width: 900px) {
+  @media (min-width: 100px) {
     grid-template-columns: 1fr;
     grid-row-gap: 15px;
     width: 100%;
@@ -39,14 +39,7 @@ const Details = styled.div`
     letter-spacing: 3px;
   }
 `;
-/* 
-          specialized in full-stack engineering. for the most part, I'm a self-taught developer who has a passion for creating beautiful responsive web applications
-          and robust web services.
-        </p>
 
-        <p>
-        apart from development, my other interests include participating in algorithmic programming competitions, reading interstellar articles, and contributing to social education improvement programs.
-        */
 const ImageContainer = styled.div`
 text-align: center;
 
@@ -92,15 +85,18 @@ const About = () => {
         <TypingEffect />
 
         <p>
-          currently a final year computer science student i am a Full Stack developer with a love of solving production-level problems. 
-    Interested in building scalable data-driven systems which, through data organization, distributed systems, and query optimization, can achieve higher efficiency in business analysis, computing, and decision making. 
-    Most experienced language: C/C++, Java.
+        I am a Software Developer with a love of solving production-level problems. Interested in building scalable data-driven systems which, through data organization, distributed systems, and query optimization, can achieve higher efficiency in business analysis, computing, and decision making. Most experienced language: C++, JavaScript.
+
+        </p>
+
+        <p>
+        Apart from development, my other interests include participating in algorithmic programming competitions, reading articles related to interstellar things, and contributing to social education improvement programs.
         </p>
       </Details>
 
-      <ImageContainer>
+      {/* <ImageContainer>
         <Img src={Cadell} alt="Cadell" cache/>
-      </ImageContainer>
+      </ImageContainer> */}
     </Container>
   );
 };

@@ -48,12 +48,13 @@ const SkillContainer = styled.div`
   }
 `;
 
-const EachSkill = ({ skill, icon, direction }) => {
+const EachSkill = ({ skill, icon, direction, isReactIcon }) => {
   return (
     <SkillContainer data-aos={direction} data-aos-easing="ease-in-out">
       <p>{skill}</p>
       <span>
-        <FontAwesomeIcon icon={icon} />
+        {isReactIcon ? icon:
+        <FontAwesomeIcon icon={icon} />}
       </span>
     </SkillContainer>
   );
