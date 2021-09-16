@@ -40,7 +40,7 @@ const IconsContainer = styled.div`
 const Skills = () => {
   return (
     <Container id='skills' data-aos='zoom-out-up'>
-      <h2>skills</h2>
+      <h2>Skills</h2>
       <IconsContainer>
         <EachSkill icon={faJs} skill='JavaScript' direction='zoom-out-up' />
         <EachSkill icon={faNode} skill='Express.js' direction='zoom-out-up' />
@@ -67,7 +67,7 @@ const Skills = () => {
         <EachSkill icon={faCss3} skill='CSS' direction='zoom-out-up' />
         <EachSkill
           icon={faMobileAlt}
-          skill='responsive design'
+          skill='Responsive Design'
           direction='zoom-out-up'
         />
       </IconsContainer>
